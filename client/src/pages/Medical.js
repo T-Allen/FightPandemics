@@ -38,10 +38,10 @@ const StyledWelcome = styled(Heading)`
   text-align: center;
 `;
 
-const StyledStrapline = styled(StyledWelcome)`
-  font-weight: bold;
-  margin: 0 auto;
-`;
+// const StyledStrapline = styled(StyledWelcome)`
+//   font-weight: bold;
+//   margin: 0 auto;
+// `;
 
 const OnboardingContainer = styled.div`
   margin-top: 4rem;
@@ -54,7 +54,7 @@ const getGeoLocation = () => needHelpAnswers?.location;
 
 export const Medical = (props) => {
   const [state, setState] = useState(INITIAL_STATE);
-//   console.log("render medical page", { props });
+  //   console.log("render medical page", { props });
 
   const fetchNumber = (countryName) => {
     getAirtableRecord(countryName, "Country").then((record) => {
@@ -127,7 +127,6 @@ export const Medical = (props) => {
           <ImageButton
             type="ghost"
             inactiveImg={findHelpSelected}
-
             activeImg={findHelpUnselected}
             onClick={() => props.history.push("/find-help")}
           >
