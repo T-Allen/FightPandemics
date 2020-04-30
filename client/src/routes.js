@@ -8,7 +8,7 @@ import { SymptomsCheck } from "./pages/SymptomsCheck";
 import { TermsConditions } from "./pages/TermsConditions";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { CookiesPolicy } from "./pages/CookiesPolicy";
-import Feed from "./pages/Feed";
+import Feed from "./containers/FeedContainer";
 import Login from "./pages/Login";
 import VerifyEmail from "./pages/VerifyEmail";
 import NearestHospital from "./pages/NearestHospital";

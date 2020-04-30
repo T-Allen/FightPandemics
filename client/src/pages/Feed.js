@@ -25,7 +25,8 @@ const initialState = {
   location: "",
 };
 
-export default () => {
+export default (props) => {
+  console.log(props);
   const [feedState, feedDispatch] = useReducer(feedReducer, initialState);
   const [selectedOptions, optionsDispatch] = useReducer(optionsReducer, {});
   const { filterModal, createPostModal, activePanel, location } = feedState;
